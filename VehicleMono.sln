@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleMono.Models", "Vehic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleMono.DAL", "VehicleMono.DAL\VehicleMono.DAL.csproj", "{0FFCE193-82DD-4771-8A3B-EE2C497217F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleMono.Repository.Common", "VehicleMono.Repository.Common\VehicleMono.Repository.Common.csproj", "{86EEB601-6C88-4EC1-A539-3700A8E9263A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleMono.Repository", "VehicleMono.Repository\VehicleMono.Repository.csproj", "{63D7F306-FB3E-4EF7-88DB-34B133C9E624}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{0FFCE193-82DD-4771-8A3B-EE2C497217F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FFCE193-82DD-4771-8A3B-EE2C497217F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FFCE193-82DD-4771-8A3B-EE2C497217F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86EEB601-6C88-4EC1-A539-3700A8E9263A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86EEB601-6C88-4EC1-A539-3700A8E9263A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86EEB601-6C88-4EC1-A539-3700A8E9263A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86EEB601-6C88-4EC1-A539-3700A8E9263A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63D7F306-FB3E-4EF7-88DB-34B133C9E624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63D7F306-FB3E-4EF7-88DB-34B133C9E624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63D7F306-FB3E-4EF7-88DB-34B133C9E624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63D7F306-FB3E-4EF7-88DB-34B133C9E624}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
