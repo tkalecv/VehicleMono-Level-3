@@ -1,0 +1,15 @@
+C:\Users\Valentin\source\repos\VehicleLevel3\VehicleMono.Models\bin\Debug\VehicleMono.Models.dll
+C:\Users\Valentin\source\repos\VehicleLevel3\VehicleMono.Models\bin\Debug\VehicleMono.Models.pdb
+C:\Users\Valentin\source\repos\VehicleLevel3\VehicleMono.Models\obj\Debug\VehicleMono.Models.csprojAssemblyReference.cache
+C:\Users\Valentin\source\repos\VehicleLevel3\VehicleMono.Models\obj\Debug\VehicleMono.Models.csproj.CoreCompileInputs.cache
+C:\Users\Valentin\source\repos\VehicleLevel3\VehicleMono.Models\obj\Debug\VehicleMono.Models.dll
+C:\Users\Valentin\source\repos\VehicleLevel3\VehicleMono.Models\obj\Debug\VehicleMono.Models.pdb
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.Models\bin\Debug\VehicleMono.Models.dll
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.Models\bin\Debug\VehicleMono.Models.pdb
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.Models\bin\Debug\VehicleMono.Models.Common.dll
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.Models\bin\Debug\VehicleMono.Models.Common.pdb
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.Models\obj\Debug\VehicleMono.Models.csprojAssemblyReference.cache
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.Models\obj\Debug\VehicleMono.Models.csproj.CoreCompileInputs.cache
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.Models\obj\Debug\VehicleMono.Models.csproj.CopyComplete
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.Models\obj\Debug\VehicleMono.Models.dll
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.Models\obj\Debug\VehicleMono.Models.pdb

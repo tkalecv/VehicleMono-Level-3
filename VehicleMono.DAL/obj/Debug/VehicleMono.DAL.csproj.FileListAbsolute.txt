@@ -1,0 +1,11 @@
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.DAL\bin\Debug\VehicleLevel3.dll.config
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.DAL\bin\Debug\VehicleLevel3.dll
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.DAL\bin\Debug\VehicleLevel3.pdb
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.DAL\obj\Debug\VehicleMono.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.DAL\obj\Debug\VehicleMono.DAL.csproj.CopyComplete
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.DAL\obj\Debug\VehicleLevel3.dll
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.DAL\obj\Debug\VehicleLevel3.pdb

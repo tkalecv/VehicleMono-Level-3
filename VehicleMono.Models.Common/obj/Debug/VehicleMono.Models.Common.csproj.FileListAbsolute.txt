@@ -1,0 +1,5 @@
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.Models.Common\bin\Debug\VehicleMono.Models.Common.dll
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.Models.Common\bin\Debug\VehicleMono.Models.Common.pdb
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.Models.Common\obj\Debug\VehicleMono.Models.Common.csproj.CoreCompileInputs.cache
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.Models.Common\obj\Debug\VehicleMono.Models.Common.dll
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.Models.Common\obj\Debug\VehicleMono.Models.Common.pdb
