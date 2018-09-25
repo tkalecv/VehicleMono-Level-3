@@ -9,3 +9,15 @@ C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.DAL\obj\Debug\VehicleMono
 C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.DAL\obj\Debug\VehicleMono.DAL.csproj.CopyComplete
 C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.DAL\obj\Debug\VehicleLevel3.dll
 C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.DAL\obj\Debug\VehicleLevel3.pdb
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.DAL\bin\Debug\VehicleLevel3.dll.config
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.DAL\bin\Debug\VehicleLevel3.dll
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.DAL\bin\Debug\VehicleLevel3.pdb
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.DAL\obj\Debug\VehicleMono.DAL.csprojAssemblyReference.cache
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.DAL\obj\Debug\VehicleMono.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.DAL\obj\Debug\VehicleMono.DAL.csproj.CopyComplete
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.DAL\obj\Debug\VehicleLevel3.dll
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.DAL\obj\Debug\VehicleLevel3.pdb

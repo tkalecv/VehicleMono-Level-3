@@ -1,0 +1,12 @@
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Repository.Common\bin\Debug\VehicleMono.Repository.Common.dll.config
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Repository.Common\bin\Debug\VehicleMono.Repository.Common.dll
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Repository.Common\bin\Debug\VehicleMono.Repository.Common.pdb
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Repository.Common\bin\Debug\EntityFramework.dll
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Repository.Common\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Repository.Common\bin\Debug\EntityFramework.xml
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Repository.Common\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Repository.Common\obj\Debug\VehicleMono.Repository.Common.csprojAssemblyReference.cache
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Repository.Common\obj\Debug\VehicleMono.Repository.Common.csproj.CoreCompileInputs.cache
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Repository.Common\obj\Debug\VehicleMono.Repository.Common.csproj.CopyComplete
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Repository.Common\obj\Debug\VehicleMono.Repository.Common.dll
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Repository.Common\obj\Debug\VehicleMono.Repository.Common.pdb

@@ -21,31 +21,31 @@ namespace VehicleMono.Repository
             this.uowFactory = uowFactory;
         }
 
-        public async Task Delete(T entity)
+        public async Task DeleteAsync(T entity)
         {
             var unitOfWork = uowFactory.CreateUnitOfWork();
             await unitOfWork.DeleteAsync(entity);
             await unitOfWork.CommitAsync();
         }
 
-        public IQueryable<T> GetAll()
+        public IQueryable<T> GetAllAsync()
         {
             return context.Set<T>();
         }
 
-        public async Task<T> GetByID(int id)
+        public async Task<T> GetByIDAsync(int id)
         {
             return await context.Set<T>().FindAsync(id);
         }
 
-        public async Task Insert(T entity)
+        public async Task InsertAsync(T entity)
         {
             var unitOfWork = uowFactory.CreateUnitOfWork();
             await unitOfWork.AddAsync(entity);
             await unitOfWork.CommitAsync();
         }
 
-        public async Task Update(T entity)
+        public async Task UpdateAsync(T entity)
         {
             var unitOfWork = uowFactory.CreateUnitOfWork();
             await unitOfWork.UpdateAsync(entity);

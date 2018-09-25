@@ -3,3 +3,15 @@ C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.Models.Common\bin\Debug\V
 C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.Models.Common\obj\Debug\VehicleMono.Models.Common.csproj.CoreCompileInputs.cache
 C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.Models.Common\obj\Debug\VehicleMono.Models.Common.dll
 C:\Users\Valentin\source\repos\VehicleMono\VehicleMono.Models.Common\obj\Debug\VehicleMono.Models.Common.pdb
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Models.Common\bin\Debug\VehicleMono.Models.Common.dll.config
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Models.Common\bin\Debug\VehicleMono.Models.Common.dll
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Models.Common\bin\Debug\VehicleMono.Models.Common.pdb
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Models.Common\bin\Debug\EntityFramework.dll
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Models.Common\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Models.Common\bin\Debug\EntityFramework.xml
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Models.Common\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Models.Common\obj\Debug\VehicleMono.Models.Common.csprojAssemblyReference.cache
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Models.Common\obj\Debug\VehicleMono.Models.Common.csproj.CoreCompileInputs.cache
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Models.Common\obj\Debug\VehicleMono.Models.Common.csproj.CopyComplete
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Models.Common\obj\Debug\VehicleMono.Models.Common.dll
+C:\Users\Valentin\source\repos\VehicleMono\VehicleMono-Level-3\VehicleMono.Models.Common\obj\Debug\VehicleMono.Models.Common.pdb

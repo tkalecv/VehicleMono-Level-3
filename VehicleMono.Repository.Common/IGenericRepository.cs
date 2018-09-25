@@ -8,11 +8,11 @@ namespace VehicleMono.Repository.Common
 {
     public interface IGenericRepository<T> where T : class
     {
-        Task<T> GetByID(int id);
-        IQueryable<T> GetAll();
+        Task<T> GetByIDAsync(int id);
+        IQueryable<T> GetAllAsync();
 
-        Task Insert(T entity);
-        Task Delete(T entity);
-        Task Update(T entity);
+        Task InsertAsync(T entity);
+        Task DeleteAsync(T entity);
+        Task UpdateAsync(T entity);
     }
 }
