@@ -11,7 +11,7 @@ namespace VehicleMono.Repository.Common
         Task<T> GetByIDAsync(int id);
         IQueryable<T> GetAllAsync();
 
-        Task InsertAsync(T entity);
+        Task CreateAsync(T entity);
         Task DeleteAsync(T entity);
         Task UpdateAsync(T entity);
     }

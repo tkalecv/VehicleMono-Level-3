@@ -59,6 +59,9 @@
   <ItemGroup>
     <Compile Include="IVehicleMake.cs" />
     <Compile Include="IVehicleModel.cs" />
+    <Compile Include="Parameters.Common\IFilteringParameter.cs" />
+    <Compile Include="Parameters.Common\IPagingParameter.cs" />
+    <Compile Include="Parameters.Common\ISortingParameter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -57,6 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Parameters\FilteringParameter.cs" />
+    <Compile Include="Parameters\PagingParameter.cs" />
+    <Compile Include="Parameters\SortingParameter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VehicleMake.cs" />
     <Compile Include="VehicleModel.cs" />

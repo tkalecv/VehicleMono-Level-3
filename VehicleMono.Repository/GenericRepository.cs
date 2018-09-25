@@ -12,7 +12,7 @@ namespace VehicleMono.Repository
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        protected VehicleContext context;
+        protected VehicleContext context { get; private set; }
         IUnitOfWorkFactory uowFactory;
 
         public GenericRepository(VehicleContext context, IUnitOfWorkFactory uowFactory)
@@ -38,7 +38,7 @@ namespace VehicleMono.Repository
             return await context.Set<T>().FindAsync(id);
         }
 
-        public async Task InsertAsync(T entity)
+        public async Task CreateAsync(T entity)
         {
             var unitOfWork = uowFactory.CreateUnitOfWork();
             await unitOfWork.AddAsync(entity);
