@@ -16,7 +16,8 @@ namespace VehicleMono.Repository.Common
         Task UpdateVehicleMakeAsync(IVehicleMake make);
 
         Task<IVehicleMake> FindVehicleMakeByIDAsync(int id);
-        Task<IPagedList<IVehicleMake>> GetAllVehicleMakesAsync(ISortingParameter sortingParameters, IFilteringParameter filterParameter, IPagingParameter pagingParameter);
+        //Task<IPagedList<IVehicleMake>> GetAllVehicleMakesAsync(ISortingParameter sortingParameters, IFilteringParameter filterParameter, IPagingParameter pagingParameter);
 
+        Task<IEnumerable<IVehicleMake>> GetAllVehicleMakesAsync();
     }
 }

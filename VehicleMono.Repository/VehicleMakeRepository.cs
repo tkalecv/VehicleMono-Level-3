@@ -41,43 +41,47 @@ namespace VehicleMono.Repository
             return  AutoMapper.Mapper.Map<IVehicleMake>(await repository.GetByIDAsync(id));
         }
 
-        public async Task<IPagedList<IVehicleMake>> GetAllVehicleMakesAsync(ISortingParameter sortingParameters, IFilteringParameter filterParameter, IPagingParameter pagingParameter)
+        public async Task<IEnumerable<IVehicleMake>> GetAllVehicleMakesAsync () /*(ISortingParameter sortingParameters, IFilteringParameter filterParameter, IPagingParameter pagingParameter)*/
         {
             IEnumerable<VehicleMakeEntity> makeList;
+            makeList = await repository.GetAllAsync().ToListAsync();
+            return AutoMapper.Mapper.Map<IEnumerable<IVehicleMake>>(makeList);
 
-            //Search
-            if (!String.IsNullOrEmpty(filterParameter.Search))
-            {
-                makeList = await repository.GetAllAsync().Where(x => x.Name.ToUpper().StartsWith(filterParameter.Search.ToUpper())
-                || x.Abrv.StartsWith(filterParameter.Search)).ToListAsync();
-                    
+            #region Paging
+            ////Search
+            //if (!String.IsNullOrEmpty(filterParameter.Search))
+            //{
+            //    makeList = await repository.GetAllAsync().Where(x => x.Name.ToUpper().StartsWith(filterParameter.Search.ToUpper())
+            //    || x.Abrv.StartsWith(filterParameter.Search)).ToListAsync();
 
-            }
-            else
-            {
-                makeList = await repository.GetAllAsync().ToListAsync();
-            }
 
-            IPagedList<VehicleMakeEntity> vehicleMakeList;
+            //}
+            //else
+            //{
+            //    makeList = await repository.GetAllAsync().ToListAsync();
+            //}
 
-            //Sorting
-            switch (sortingParameters.SortOrder)
-            {
-                case "name_desc":
-                    vehicleMakeList = makeList.OrderByDescending(x => x.Name).ToPagedList(pagingParameter.Page, pagingParameter.PageSize);
-                    break;
-                case "Abrv":
-                    vehicleMakeList = makeList.OrderBy(x => x.Abrv).ToPagedList(pagingParameter.Page, pagingParameter.PageSize);
-                    break;
-                case "Abrv_desc":
-                    vehicleMakeList = makeList.OrderByDescending(x => x.Abrv).ToPagedList(pagingParameter.Page, pagingParameter.PageSize);
-                    break;
-                default:
-                    vehicleMakeList = makeList.OrderBy(x => x.Name).ToPagedList(pagingParameter.Page, pagingParameter.PageSize);
-                    break;
-            }
+            //IPagedList<VehicleMakeEntity> vehicleMakeList;
 
-            return (AutoMapper.Mapper.Map<IPagedList<IVehicleMake>>(vehicleMakeList));
+            ////Sorting
+            //switch (sortingParameters.SortOrder)
+            //{
+            //    case "name_desc":
+            //        vehicleMakeList = makeList.OrderByDescending(x => x.Name).ToPagedList(pagingParameter.Page, pagingParameter.PageSize);
+            //        break;
+            //    case "Abrv":
+            //        vehicleMakeList = makeList.OrderBy(x => x.Abrv).ToPagedList(pagingParameter.Page, pagingParameter.PageSize);
+            //        break;
+            //    case "Abrv_desc":
+            //        vehicleMakeList = makeList.OrderByDescending(x => x.Abrv).ToPagedList(pagingParameter.Page, pagingParameter.PageSize);
+            //        break;
+            //    default:
+            //        vehicleMakeList = makeList.OrderBy(x => x.Name).ToPagedList(pagingParameter.Page, pagingParameter.PageSize);
+            //        break;
+            //}
+
+            //return (AutoMapper.Mapper.Map<IPagedList<IVehicleMake>>(vehicleMakeList));
+            #endregion  Paging
         }
 
     }
