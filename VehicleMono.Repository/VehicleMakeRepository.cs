@@ -83,6 +83,5 @@ namespace VehicleMono.Repository
             //return (AutoMapper.Mapper.Map<IPagedList<IVehicleMake>>(vehicleMakeList));
             #endregion  Paging
         }
-
     }
 }

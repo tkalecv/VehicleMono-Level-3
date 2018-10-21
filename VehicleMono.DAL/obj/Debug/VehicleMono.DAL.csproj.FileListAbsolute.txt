@@ -39,3 +39,4 @@ C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.DAL\obj\Debug\Vehi
 C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.DAL\obj\Debug\VehicleMono.DAL.csproj.CopyComplete
 C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.DAL\obj\Debug\VehicleLevel3.dll
 C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.DAL\obj\Debug\VehicleLevel3.pdb
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.DAL\obj\Debug\VehicleMono.DAL.csprojAssemblyReference.cache

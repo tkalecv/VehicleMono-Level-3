@@ -12,11 +12,11 @@ namespace VehicleMono.Repository.UOW
 {
     public class UnitOfWork : IUnitOfWork
     {
-        protected VehicleContext context {get; private set;}
+        protected VehicleContext context { get; private set; }
 
         public UnitOfWork(VehicleContext _context)
         {
-            if(_context == null)
+            if (_context == null)
             {
                 throw new ArgumentNullException("context");
             }
@@ -26,7 +26,7 @@ namespace VehicleMono.Repository.UOW
         public Task<int> AddAsync<T>(T entity) where T : class
         {
             DbEntityEntry dbEntityEntry = context.Entry(entity);
-            if(dbEntityEntry.State != EntityState.Detached)
+            if (dbEntityEntry.State != EntityState.Detached)
             {
                 dbEntityEntry.State = EntityState.Added;
             }
@@ -52,7 +52,7 @@ namespace VehicleMono.Repository.UOW
         {
             DbEntityEntry dbEntityEntry = context.Entry(entity);
 
-            if(dbEntityEntry.State != EntityState.Deleted)
+            if (dbEntityEntry.State != EntityState.Deleted)
             {
                 dbEntityEntry.State = EntityState.Deleted;
             }
@@ -67,7 +67,7 @@ namespace VehicleMono.Repository.UOW
         public Task<int> DeleteAsync<T>(int ID) where T : class
         {
             var entity = context.Set<T>().Find(ID);
-            if(entity == null)
+            if (entity == null)
             {
                 return Task.FromResult(1);
             }
@@ -84,12 +84,13 @@ namespace VehicleMono.Repository.UOW
             dbEntityEntry.State = EntityState.Modified;
 
             return Task.FromResult(1);
-
         }
 
         public void Dispose()
         {
             context.Dispose();
         }
+
+
     }
 }

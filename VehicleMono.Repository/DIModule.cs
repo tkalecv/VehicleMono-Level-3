@@ -20,6 +20,8 @@ namespace VehicleMono.Repository
             Bind(typeof(IVehicleMakeRepository)).To(typeof(VehicleMakeRepository));
             Bind(typeof(IVehicleModelRepository)).To(typeof(VehicleModelRepository));
 
+            Bind(typeof(IUnitOfWork)).To(typeof(UnitOfWork));
+
 
             Bind<IUnitOfWorkFactory>().ToFactory();
 
