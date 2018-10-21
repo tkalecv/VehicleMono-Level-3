@@ -1,0 +1,17 @@
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Service.Common\bin\Debug\VehicleMono.Service.Common.dll
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Service.Common\bin\Debug\VehicleMono.Service.Common.pdb
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Service.Common\bin\Debug\VehicleMono.Models.Common.dll
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Service.Common\bin\Debug\VehicleMono.Models.Common.pdb
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Service.Common\bin\Debug\VehicleMono.Models.Common.dll.config
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Service.Common\obj\Debug\VehicleMono.Service.Common.csprojAssemblyReference.cache
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Service.Common\obj\Debug\VehicleMono.Service.Common.csproj.CoreCompileInputs.cache
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Service.Common\obj\Debug\VehicleMono.Service.Common.csproj.CopyComplete
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Service.Common\obj\Debug\VehicleMono.Service.Common.dll
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Service.Common\obj\Debug\VehicleMono.Service.Common.pdb
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Service.Common\bin\Debug\Ninject.dll
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Service.Common\bin\Debug\Ninject.xml
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Service.Common\bin\Debug\VehicleMono.Service.Common.dll.config
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Service.Common\bin\Debug\EntityFramework.dll
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Service.Common\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Service.Common\bin\Debug\EntityFramework.xml
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Service.Common\bin\Debug\EntityFramework.SqlServer.xml

@@ -4,35 +4,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VehicleMono.Models.Common;
+using VehicleMono.Repository.Common;
 using VehicleMono.Service.Common;
 
 namespace VehicleMono.Service
 {
     public class VehicleModelService : IVehicleModelService
     {
-        public Task CreateVehicleModelAsync(IVehicleModel model)
+
+        public IVehicleModelRepository repository { get; protected set; }
+
+        public VehicleModelService(IVehicleModelRepository repository)
         {
-            throw new NotImplementedException();
+            this.repository = repository;
         }
 
-        public Task DeleteVehicleModelAsync(IVehicleModel model)
+
+        public async Task CreateVehicleModelAsync(IVehicleModel model)
         {
-            throw new NotImplementedException();
+           await repository.CreateVehicleModelAsync(model);
         }
 
-        public Task<IVehicleModel> FindVehicleModelByIDAsync(int id)
+        public async Task DeleteVehicleModelAsync(IVehicleModel model)
         {
-            throw new NotImplementedException();
+            await repository.DeleteVehicleModelAsync(model);
         }
 
-        public Task<IEnumerable<IVehicleModel>> GetAllVehicleModelsAsync()
+        public async Task<IVehicleModel> FindVehicleModelByIDAsync(int id)
         {
-            throw new NotImplementedException();
+           return await repository.FindVehicleModelByIDAsync(id);
         }
 
-        public Task UpdateVehicleModelAsync(IVehicleModel model)
+        public async Task<IEnumerable<IVehicleModel>> GetAllVehicleModelsAsync()
         {
-            throw new NotImplementedException();
+            return await repository.GetAllVehicleModelsAsync();
+        }
+
+        public async Task UpdateVehicleModelAsync(IVehicleModel model)
+        {
+            await repository.UpdateVehicleModelAsync(model);
         }
     }
 }

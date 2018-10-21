@@ -11,6 +11,11 @@ namespace VehicleLevel3
 {
    public class VehicleContext : DbContext/*, IVehicleContext*/
     {
+        public VehicleContext() : base("name=VehicleContext")
+        {
+
+        }
+
         public DbSet<VehicleMakeEntity> VehicleMakes { get; set; }
         public DbSet<VehicleModelEntity> VehicleModels { get; set; }
 

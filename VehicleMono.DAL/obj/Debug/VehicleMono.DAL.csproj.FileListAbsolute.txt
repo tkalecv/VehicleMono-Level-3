@@ -35,7 +35,6 @@ C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.DAL\bin\Debug\Enti
 C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.DAL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.DAL\bin\Debug\Ninject.xml
 C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.DAL\bin\Debug\System.ValueTuple.xml
-C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.DAL\obj\Debug\VehicleMono.DAL.csprojAssemblyReference.cache
 C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.DAL\obj\Debug\VehicleMono.DAL.csproj.CoreCompileInputs.cache
 C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.DAL\obj\Debug\VehicleMono.DAL.csproj.CopyComplete
 C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.DAL\obj\Debug\VehicleLevel3.dll
