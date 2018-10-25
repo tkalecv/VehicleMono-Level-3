@@ -47,7 +47,7 @@ namespace VehicleMono.WebAPI.App_Start
                 kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
                 kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
 
-                //Load DIModules with new NinjectSettings { LoadExtensions = false }
+                //Load DIModules with "new NinjectSettings { LoadExtensions = false }"
                 kernel.Load(AppDomain.CurrentDomain.GetAssemblies());
 
                 //RegisterServices(kernel);

@@ -138,3 +138,6 @@ C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.WebAPI\bin\EntityF
 C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.WebAPI\bin\VehicleMono.Service.Common.dll.config
 C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.WebAPI\bin\VehicleMono.Service.dll.config
 C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.WebAPI\bin\EntityFramework.SqlServer.xml
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.WebAPI\bin\System.Web.Cors.dll
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.WebAPI\bin\System.Web.Http.Cors.dll
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.WebAPI\bin\System.Web.Http.Cors.xml

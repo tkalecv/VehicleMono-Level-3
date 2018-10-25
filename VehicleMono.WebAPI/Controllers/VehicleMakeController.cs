@@ -12,76 +12,69 @@ using VehicleMono.Models;
 using VehicleMono.Models.Common;
 using VehicleMono.Service.Common;
 using VehicleMono.WebAPI.ViewModels;
+using System.Web.Http.Cors;
 
 namespace VehicleMono.WebAPI.Controllers
 {
+    //Connect to Angular
+    //[EnableCors(origins: "*", headers: "*", methods: "*")]
     public class VehicleMakeController : ApiController
     {
         public IVehicleMakeService service { get; set; }
 
-        private VehicleContext context { get; set; }
 
-        public VehicleMakeController(IVehicleMakeService service, VehicleContext context)
+        public VehicleMakeController(IVehicleMakeService service)
         {
             this.service = service;
 
-            this.context = context;
         }
         // GET: api/VehicleMake
         public async Task<IEnumerable<VehicleMakeVM>> GetVehicleMake()
         {
+
             return AutoMapper.Mapper.Map<IEnumerable<VehicleMakeVM>>(await service.GetAllVehicleMakesAsync());
         }
 
-        //// GET: api/VehicleMake/5
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
 
         // POST: api/VehicleMake
         [ResponseType(typeof(VehicleMakeVM))]
         public async Task<IHttpActionResult> PostVehicleMake([FromBody]VehicleMakeVM make)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
             await service.CreateVehicleMakeAsync(AutoMapper.Mapper.Map<VehicleMake>(make));
 
-            return CreatedAtRoute("DefaultApi", new { id = make.ID }, make);
+            return  CreatedAtRoute("DefaultApi", new { id = make.ID }, make);
         }
 
         // PUT: api/VehicleMake/5
+        [ResponseType(typeof(VehicleMakeVM))]
         public async Task<IHttpActionResult> PutVehicleMake(int id, [FromBody]VehicleMakeVM make)
         {
-            if (id != make.ID)
+
+
+            if (!ModelState.IsValid)
+                return BadRequest("Not a valid model");
+
+            var makeWithID = AutoMapper.Mapper.Map<VehicleMakeVM>(await service.FindVehicleMakeByIDAsync(id));
+
+            if (makeWithID != null)
             {
-                return BadRequest();
+                makeWithID.Name = make.Name;
+                makeWithID.Abrv = make.Abrv;
+
+                await service.UpdateVehicleMakeAsync(AutoMapper.Mapper.Map<VehicleMake>(makeWithID));
+
+            }
+            else
+            {
+                return NotFound();
             }
 
-            try
-            {
-                await service.UpdateVehicleMakeAsync(AutoMapper.Mapper.Map<VehicleMake>(make));
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!VehicleMakesExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
 
-            return StatusCode(HttpStatusCode.NoContent);
-
+            return Ok();
         }
 
         // DELETE: api/VehicleMake/5
+        [ResponseType(typeof(VehicleMakeVM))]
         public async Task<IHttpActionResult> DeleteVehicleMake(int id)
         {
             var make = AutoMapper.Mapper.Map<VehicleMakeVM>(await service.FindVehicleMakeByIDAsync(id));
@@ -96,10 +89,6 @@ namespace VehicleMono.WebAPI.Controllers
             return Ok(make);
         }
 
-        private bool VehicleMakesExists(int id)
-        {
-            return context.VehicleMakes.Count(x => x.ID == id) > 0;
-        }
 
     }
 }

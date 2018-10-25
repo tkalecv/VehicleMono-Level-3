@@ -1,0 +1,14 @@
+<table class="table table-sm table-hover">
+  <tr *ngFor ="let vehicleMake of vehicleMakeService.vehicleMakeList">
+      <td>{{vehicleMake.Name}}</td>
+      <td>{{vehicleMake.Abrv}}</td>
+      <td>
+        <a class="btn" (click)="editVehicleMake(vehicleMake)">
+          <i class="fa fa-pencil-square-o"></i>
+          <a class="btn text-danger" (click)="deleteVehicleMake(vehicleMake.ID)">
+              <i class="fa fa-trash-o"></i>
+            </a>
+        </a>
+      </td>
+  </tr>
+</table>

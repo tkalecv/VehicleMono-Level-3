@@ -33,3 +33,4 @@ C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Models.Common\obj\
 C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Models.Common\obj\Debug\VehicleMono.Models.Common.csproj.CopyComplete
 C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Models.Common\obj\Debug\VehicleMono.Models.Common.dll
 C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Models.Common\obj\Debug\VehicleMono.Models.Common.pdb
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.Models.Common\obj\Debug\VehicleMono.Models.Common.csprojAssemblyReference.cache
