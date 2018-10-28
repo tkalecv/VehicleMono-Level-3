@@ -31,7 +31,6 @@ export class VehicleMakeListComponent implements OnInit {
       this.toastr.warning("Deleted successfully!", "Vehicle Make Register");
     });
     }
-
   }
 
 }

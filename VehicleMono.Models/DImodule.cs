@@ -8,7 +8,7 @@ using VehicleMono.Models.Common;
 
 namespace VehicleMono.Models
 {
-    class DIModule : NinjectModule
+    public class DIModule : NinjectModule
     {
         public override void Load()
         {

@@ -28,9 +28,9 @@ namespace VehicleMono.Repository
             await unitOfWork.CommitAsync();
         }
 
-        public IQueryable<T> GetAllAsync()
+        public  IQueryable<T> GetAllAsync()
         {
-            return context.Set<T>();
+            return  context.Set<T>();
         }
 
         public async Task<T> GetByIDAsync(int id)

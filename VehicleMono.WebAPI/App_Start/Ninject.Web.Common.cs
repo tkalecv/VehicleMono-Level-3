@@ -41,16 +41,14 @@ namespace VehicleMono.WebAPI.App_Start
         /// <returns>The created kernel.</returns>
         private static IKernel CreateKernel()
         {
-            var kernel = new StandardKernel(new NinjectSettings { LoadExtensions = false });
+            var kernel = new StandardKernel();
             try
             {
                 kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
                 kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
 
-                //Load DIModules with "new NinjectSettings { LoadExtensions = false }"
-                kernel.Load(AppDomain.CurrentDomain.GetAssemblies());
 
-                //RegisterServices(kernel);
+                RegisterServices(kernel);
 
                 GlobalConfiguration.Configuration.DependencyResolver = new NinjectDependencyResolver(kernel);
 
@@ -69,6 +67,9 @@ namespace VehicleMono.WebAPI.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.Load<VehicleMono.Repository.DIModule>();
+            kernel.Load<VehicleMono.Service.DIModule>();
+            kernel.Load<VehicleMono.Models.DIModule>();
         }
     }
 }

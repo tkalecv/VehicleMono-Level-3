@@ -23,7 +23,7 @@ namespace VehicleMono.WebAPI.Controllers
 
         }
 
-        // GET: api/VehicleMake
+        // GET: api/VehicleModel
         public async Task<IEnumerable<VehicleModelVM>> GetVehicleModel()
         {
 
@@ -31,7 +31,7 @@ namespace VehicleMono.WebAPI.Controllers
         }
 
 
-        // POST: api/VehicleMake
+        // POST: api/VehicleModel
         [ResponseType(typeof(VehicleModelVM))]
         public async Task<IHttpActionResult> PostVehicleModel([FromBody]VehicleModelVM vModel)
         {
@@ -40,7 +40,7 @@ namespace VehicleMono.WebAPI.Controllers
             return CreatedAtRoute("DefaultApi", new { id = vModel.ID }, vModel);
         }
 
-        // PUT: api/VehicleMake/5
+        // PUT: api/VehicleModel/5
         [ResponseType(typeof(VehicleModelVM))]
         public async Task<IHttpActionResult> PutVehicleModel(int id, [FromBody]VehicleModelVM vModel)
         {
@@ -68,7 +68,7 @@ namespace VehicleMono.WebAPI.Controllers
             return Ok();
         }
 
-        // DELETE: api/VehicleMake/5
+        // DELETE: api/VehicleModel/5
         [ResponseType(typeof(VehicleModelVM))]
         public async Task<IHttpActionResult> DeleteVehicleModel(int id)
         {

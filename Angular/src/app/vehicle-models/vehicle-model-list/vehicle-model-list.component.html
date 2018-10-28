@@ -1,0 +1,16 @@
+<table class="table table-sm table-hover">
+  <tr *ngFor ="let vehicleModel of vehicleModelService.vehicleModelList">
+      <td>{{vehicleModel.Name}}</td>
+      <td>{{vehicleModel.Abrv}}</td>
+      <td>{{vehicleModel.Color}}</td>
+      <td>{{vehicleModel.VehicleMakeID}}</td>
+      <td>
+        <a class="btn" (click)="editVehicleModel(vehicleModel)">
+          <i class="fa fa-pencil-square-o"></i>
+          <a class="btn text-danger" (click)="deleteVehicleModel(vehicleModel.ID)">
+              <i class="fa fa-trash-o"></i>
+            </a>
+        </a>
+      </td>
+  </tr>
+</table>
