@@ -19,6 +19,14 @@ namespace VehicleLevel3
         public DbSet<VehicleMakeEntity> VehicleMakes { get; set; }
         public DbSet<VehicleModelEntity> VehicleModels { get; set; }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<VehicleMakeEntity>()
+                .HasMany(x => x.VehicleModels)
+                .WithOptional(x => x.VehicleMake)
+                .HasForeignKey(x=> x.VehicleMakeID);
+        }
+
         //public new IDbSet<T> Set<T>() where T : class
         //{
         //    return base.Set<T>();

@@ -17,6 +17,7 @@ namespace VehicleMono.WebAPI.App_Start
             CreateMap<IVehicleMake, VehicleMakeVM>().ReverseMap();
 
             CreateMap<VehicleModel, VehicleModelVM>().ReverseMap();
+            CreateMap<IVehicleModel, VehicleModelVM>().ReverseMap();
         }
     }
 }

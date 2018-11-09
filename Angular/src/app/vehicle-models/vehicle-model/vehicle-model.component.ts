@@ -27,7 +27,6 @@ export class VehicleModelComponent implements OnInit {
       Name: '',
       Color: '',
       Abrv: '',
-      VehicleMakeID: null
     }
   }
 

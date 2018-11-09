@@ -14,7 +14,7 @@ import {PageNotFoundComponent} from './Others/pageNotFound.component';
 import {ToastrModule} from 'ngx-toastr';
 import { VehicleModelsComponent } from './vehicle-models/vehicle-models.component';
 import { VehicleModelComponent } from './vehicle-models/vehicle-model/vehicle-model.component';
-import { VehicleModelListComponent } from './vehicle-models/vehicle-model-list/vehicle-model-list.component';
+import {VehicleModelListComponent} from './vehicle-models/vehicle-model-list/vehicle-model-list.component';
 
 const appRoutes: Routes = [
 {path: 'home', component: HomeComponent},

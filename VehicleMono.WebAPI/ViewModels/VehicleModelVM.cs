@@ -11,6 +11,6 @@ namespace VehicleMono.WebAPI.ViewModels
         public string Name { get; set; }
         public string Abrv { get; set; }
         public string Color { get; set; }
-        public int? VehicleMakeID { get; set; }
+        public int vMakeID { get; set; }
     }
 }

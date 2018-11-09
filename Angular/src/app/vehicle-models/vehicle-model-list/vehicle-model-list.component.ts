@@ -4,6 +4,7 @@ import {VehicleModelService} from '../shared/vehicle-model.service';
 import{VehicleModel} from '../shared/vehicle-model.model';
 import {ToastrService} from 'ngx-toastr'
 
+
 @Component({
   selector: 'app-vehicle-model-list',
   templateUrl: './vehicle-model-list.component.html',
@@ -17,21 +18,19 @@ export class VehicleModelListComponent implements OnInit {
     this.vehicleModelService.getVehicleModelList();
   }
 
-  
   editVehicleModel(vModel : VehicleModel){
 
     this.vehicleModelService.selectedVehicleModel = Object.assign({}, vModel);
   }
 
-  deleteVehicleModel(id : number){
+  deleteVehicleMake(id : number){
     if(confirm('Are you sure to delete this record?') == true){
     this.vehicleModelService.deleteVehicleModel(id)
     .subscribe(x => {
       this.vehicleModelService.getVehicleModelList();
-      this.toastr.warning("Deleted successfully!", "Vehicle Model Register");
+      this.toastr.warning("Deleted successfully!", "Vehicle Make Register");
     });
     }
-
   }
 
 

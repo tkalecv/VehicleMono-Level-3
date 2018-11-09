@@ -40,3 +40,6 @@ C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.DAL\obj\Debug\Vehi
 C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.DAL\obj\Debug\VehicleLevel3.dll
 C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.DAL\obj\Debug\VehicleLevel3.pdb
 C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.DAL\obj\Debug\VehicleMono.DAL.csprojAssemblyReference.cache
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.DAL\obj\Debug\VehicleLevel3.Migrations.InitialCreate.resources
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.DAL\obj\Debug\VehicleMono.DAL.csproj.GenerateResource.cache
+C:\Users\Valentin\Desktop\Vehicles-WebAPI-Angular\VehicleMono.DAL\obj\Debug\VehicleLevel3.Migrations.first.resources

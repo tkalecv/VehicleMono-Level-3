@@ -1,18 +1,19 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
+using System.Web;
 using System.Web.Http;
 using System.Web.Http.Description;
-using VehicleLevel3;
 using VehicleMono.Models;
-using VehicleMono.Models.Common;
+using VehicleMono.Models.Common.Parameters;
+using VehicleMono.Models.Parameters;
 using VehicleMono.Service.Common;
 using VehicleMono.WebAPI.ViewModels;
-using System.Web.Http.Cors;
 
 namespace VehicleMono.WebAPI.Controllers
 {
@@ -28,11 +29,52 @@ namespace VehicleMono.WebAPI.Controllers
             this.service = service;
 
         }
-        // GET: api/VehicleMake
-        public async Task<IEnumerable<VehicleMakeVM>> GetVehicleMake()
-        {
 
-            return AutoMapper.Mapper.Map<IEnumerable<VehicleMakeVM>>(await service.GetAllVehicleMakesAsync());
+        // GET: api/VehicleMake
+        [HttpGet]
+        public async Task<IEnumerable<VehicleMakeVM>> GetVehicleMake([FromUri]IPagingParameter pagingParameter)
+        {
+            var makeList = AutoMapper.Mapper.Map<IEnumerable<VehicleMakeVM>>(await service.GetAllVehicleMakesAsync());
+
+            // Get's Number of Rows Count   
+            int count = makeList.Count();
+
+            // Parameter is passed and if it is null then it default Value will be pageNumber:1  
+            int CurrentPage = pagingParameter.pageNumber;
+
+            // Parameter is passed and if it is null then it default Value will be pageSize:20
+            int PageSize = pagingParameter.pageSize;
+
+            // Display TotalCount of VehicleMake to User
+            int TotalCount = count;
+
+            // Calculating Totalpage by Dividing (Number of Records / Pagesize) 
+            int TotalPages = (int)Math.Ceiling(count / (double)PageSize);
+
+            // Returns List of VehicleMake after applying Paging  
+            var vMake = makeList.Skip((CurrentPage - 1) * PageSize).Take(PageSize).AsQueryable(); //tolist
+
+            // if CurrentPage is greater than 1 it has previousPage
+            var previousPage = CurrentPage > 1 ? "Yes" : "No";
+
+            // if TotalPages is greater than CurrentPage it has nextPage
+            var nextPage = CurrentPage < TotalPages ? "Yes" : "No";
+
+            // Object which we are going to send in header   
+            var paginationMetadata = new
+            {
+                totalCount = TotalCount,
+                pageSize = PageSize,
+                currentPage = CurrentPage,
+                totalPages = TotalPages,
+                previousPage,
+                nextPage
+            };
+
+            // Setting Header
+            HttpContext.Current.Response.Headers.Add("Paging-Headers", JsonConvert.SerializeObject(paginationMetadata));
+
+            return vMake;
         }
 
 

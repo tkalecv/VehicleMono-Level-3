@@ -13,6 +13,6 @@ namespace VehicleMono.Models.Common
          string Abrv { get; set; }
          string Color { get; set; }
 
-         int? VehicleMakeID { get; set; }
+         int vMakeID { get; set; }
     }
 }

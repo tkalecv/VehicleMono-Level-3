@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace VehicleMono.Models.Common.Parameters
 {
-   public interface IPagingParameter
+    public interface IPagingParameter
     {
-         int Page { get; set; }
-         int PageSize { get; set; }
+        int pageNumber { get; set; }
+        int _pageSize { get; set; }
+        int pageSize { get; set; }
     }
 }

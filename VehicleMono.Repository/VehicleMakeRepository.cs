@@ -38,13 +38,14 @@ namespace VehicleMono.Repository
 
         public async Task<IVehicleMake> FindVehicleMakeByIDAsync(int id)
         {
-            return  AutoMapper.Mapper.Map<IVehicleMake>(await repository.GetByIDAsync(id));
+            return AutoMapper.Mapper.Map<IVehicleMake>(await repository.GetByIDAsync(id));
         }
 
-        public async Task<IEnumerable<IVehicleMake>> GetAllVehicleMakesAsync () /*(ISortingParameter sortingParameters, IFilteringParameter filterParameter, IPagingParameter pagingParameter)*/
+        public async Task<IEnumerable<IVehicleMake>> GetAllVehicleMakesAsync()
         {
             IEnumerable<VehicleMakeEntity> makeList;
             makeList = await repository.GetAllAsync().ToListAsync();
+
             return AutoMapper.Mapper.Map<IEnumerable<IVehicleMake>>(makeList);
 
             #region Paging

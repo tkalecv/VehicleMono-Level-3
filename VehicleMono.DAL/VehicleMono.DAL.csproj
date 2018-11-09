@@ -60,12 +60,29 @@
     <Compile Include="Entities\VehicleMakeEntity.cs" />
     <Compile Include="Entities\VehicleModelEntity.cs" />
     <Compile Include="IVehicleContext.cs" />
+    <Compile Include="Migrations\201810211413310_InitialCreate.cs" />
+    <Compile Include="Migrations\201810211413310_InitialCreate.Designer.cs">
+      <DependentUpon>201810211413310_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810281755538_first.cs" />
+    <Compile Include="Migrations\201810281755538_first.Designer.cs">
+      <DependentUpon>201810281755538_first.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VehicleContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201810211413310_InitialCreate.resx">
+      <DependentUpon>201810211413310_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810281755538_first.resx">
+      <DependentUpon>201810281755538_first.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
