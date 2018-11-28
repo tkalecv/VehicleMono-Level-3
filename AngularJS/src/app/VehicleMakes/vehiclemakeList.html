@@ -1,0 +1,26 @@
+
+<div ng-app="VehicleMakeModule" class="panel panel-primary"
+     ng-controller="VMakeListController as vm">
+    <div class="panel-heading"
+         style="font-size:large">
+        Product List
+        </div>
+
+        <div class="panel-body">
+            <table class="table">
+
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Abrv</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="vehiclemake in vm.vehiclemakes">
+                        <td>{{ vehiclemake.Name}}</td>
+                        <td>{{ vehiclemake.Abrv }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>

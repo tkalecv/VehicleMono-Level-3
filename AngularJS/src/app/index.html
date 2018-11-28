@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="VehicleMakeModule">
+<head>
+    <!-- inject:css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- endinject -->
+</head>
+<body>
+
+    <div class="panel panel-primary" ng-controller="VMakeListController">
+        <div class="panel-heading"
+             style="font-size:large">
+            Vehicle Make List
+        </div>
+
+        <div class="panel-body">
+            <table class="table">
+
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Abrv</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="vehiclemake in vm.vehiclemakes">
+                        <td>{{ vehiclemake.Name}}</td>
+                        <td>{{ vehiclemake.Abrv }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- inject:bower -->
+    <script src="/bower_components/angular/angular.js"></script>
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+    <script src="VehicleMakes/vehiclemakeList.controller.js"></script>
+    <script src="VehicleMakes/services/vehiclemake.service.js"></script>
+    <!-- endinject -->
+
+
+</body>
+</html>
